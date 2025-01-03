@@ -1,0 +1,200 @@
+* {
+padding: 0;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif, Oxanium;
+box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+}
+
+nav .nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container .logo img {
+    width: 165px;
+    height: 72px;
+}
+
+.nav-container .links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-container .links .link a {
+    color: white;
+    text-shadow: 1px 1px 10px purple, 1px 1px 10px purple;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 0.9rem;
+    transition: 0.2s linear;
+}
+
+.nav-container .links .link a:hover {
+    color: #e82a54;
+}
+
+.nav-container .search,
+.nav-container .shop {
+    color: green;
+}
+
+section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center; /* Added for better alignment on smaller screens */
+}
+
+section .main-container {
+    width: 90%; /* Default for smaller screens */
+    max-width: 600px; /* Restrict width on larger screens */
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-container .heading {
+    font-size: clamp(1rem, 1rem + 5vw, 3rem);
+    letter-spacing: -3px;
+}
+
+.main-container .star {
+    color: #f2d733;
+    font-size: 1.3rem;
+    margin: -5px 0 20px 0;
+}
+
+.main-container p {
+    width: 100%; /* Adjust to fit smaller screens */
+    margin: 10px 0;
+}
+
+.main-container .sizes {
+    width: 100%; /* Adjust to fit smaller screens */
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.main-container .sizes div {
+    border: 3px solid #5e6c9c;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin: 5px; /* Add spacing for wrapping */
+}
+
+.main-container .sizes div:hover {
+    background-color: #5e6c9c;
+    border: 2px solid white;
+    scale: 1.1;
+}
+
+.main-container button {
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 300px; /* Restrict button width on larger screens */
+    height: 6vh;
+    margin: 20px auto; /* Center button */
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 3px solid #e82a54;
+    background-color: #e82a54;
+    color: white;
+    transition: 0.2s linear;
+}
+
+.main-container button:hover {
+    background-color: transparent;
+    border: 3px solid #e82a54;
+    color: #e82a54;
+    box-shadow: 0 0 10px 1px #e82a54;
+}
+
+.image img {
+    width: 100%; /* Adjust image to fit smaller screens */
+    max-width: 500px; /* Restrict size on larger screens */
+    filter: drop-shadow(0 0 100px black);
+}
+
+/* Responsive Design */
+
+@media (max-width: 767px) {
+    .main-container .sizes,
+    .nav-container .links,
+    .nav-container .links .link a,
+    .nav-container .links .link a:hover,
+    .nav-container .search,
+    .nav-container .shop {
+        display: none; /* Hide these elements */
+    }
+    }
+
+@media (min-width: 768px) {
+
+    section {
+        flex-direction: row; /* Restore row layout for tablets and above */
+        text-align: left; /* Align text to the left */
+    }
+
+    section .main-container {
+        width: 40%; /* Adjust width for tablets and above */
+        margin-bottom: 0;
+    }
+
+    .image img {
+        max-width: 700px; /* Allow larger image on tablets and above */
+    }
+
+    .main-container button {
+        width: 50%; /* Adjust button width for tablets and above */
+    }
+}
+
+@media (min-width: 1024px) {
+    nav .nav-container {
+        justify-content: space-between; /* Better alignment on desktops */
+        padding: 0 40px; /* Add padding for desktops */
+    }
+
+    nav .nav-container .links .link a {
+        font-size: 1rem; /* Increase font size on larger screens */
+        margin: 0 30px;
+    }
+
+    section {
+        padding: 0 40px; /* Add padding for desktops */
+    }
+}
