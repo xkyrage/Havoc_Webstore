@@ -149,6 +149,29 @@ section .main-container {
     filter: drop-shadow(0 0 100px black);
 }
 
+footer {
+    width: 100%;
+    position: absolute; /* Place the footer relative to the page */
+    bottom: 0; /* Ensure it stays at the bottom */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional background for visibility */
+    color: white;
+    padding: 10px 20px; /* Add padding for spacing */
+    font-size: 1rem;
+}
+
+footer a {
+    color: #e82a54; /* Footer link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #5e6c9c; /* Change link color on hover */
+}
+
+
 /* Responsive Design */
 
 @media (max-width: 767px) {
