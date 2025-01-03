@@ -8,7 +8,7 @@ Features:
 - Customizable Layout: Easily tweak colors, fonts, and sections to match your brand identity.
 - Interactive Navigation: Intuitive menus and search options for smooth browsing.
 - Ready-to-Use Components: Product listings, a featured banner, and a clean footer to help you launch faster.
-- Havoc Webstore is the perfect starting point for building a professional online clothing store. Whether you're showcasing a small boutique collection or a larger apparel catalog, this template provides the flexibility and functionality to bring your vision to life.
+- Havoc Webstore is the perfect starting point for building a professional online clothing store. 
 
 Checkout the demo by clicking this button below!
 
